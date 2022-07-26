@@ -1,30 +1,34 @@
+{% set name = "mdx_gh_links" %}
 {% set version = "0.3" %}
 
 package:
-  name: mdx_gh_links
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/mdx_gh_links/mdx_gh_links-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mdx_gh_links-{{ version }}.tar.gz
   sha256: 434f81388fa16f3c16d54cfd32aaed6f584bd7a9c1886ffc626315d562f2e4f5
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python
     - pip
-    - markdown >=2.6.11
+    - python >=3.6
   run:
-    - python
-    - markdown >=2.6.11
+    - markdown >=3.0.0
+    - python >=3.6
 
 test:
   imports:
     - mdx_gh_links
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Python-Markdown/github-links/
