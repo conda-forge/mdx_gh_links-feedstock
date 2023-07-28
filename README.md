@@ -1,11 +1,11 @@
-About mdx_gh_links
-==================
+About mdx_gh_links-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdx_gh_links-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Python-Markdown/github-links/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdx_gh_links-feedstock/blob/main/LICENSE.txt)
 
 Summary: An extension to Python-Markdown which adds support for shorthand links to GitHub users, repositories, issues and commits.
 
