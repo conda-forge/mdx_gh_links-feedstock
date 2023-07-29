@@ -1,5 +1,5 @@
 {% set name = "mdx_gh_links" %}
-{% set version = "0.3" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mdx_gh_links-{{ version }}.tar.gz
-  sha256: 434f81388fa16f3c16d54cfd32aaed6f584bd7a9c1886ffc626315d562f2e4f5
+  sha256: 96518bb0d63b61985d9c42560b08388461ae6d6888f44e1718da893c0bd7bf39
 
 build:
   noarch: python
